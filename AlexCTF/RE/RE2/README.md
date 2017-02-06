@@ -59,7 +59,9 @@ gdb-peda$ c
 
 Next up 0x4c = L. 'ALEX' is shaping up. After the 'X', we were expecting a curly brace, but instead get 'C'. Seeing this, we thought to try 'ALEXCTF':
 
+```
 # ./re2 ALEXCTF
 You should have the flag by now
+```
 
 So that must be the flag!
