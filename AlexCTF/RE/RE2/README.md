@@ -41,11 +41,11 @@ RDI: 0x7fffffffe448 --> 0x5f534c0062626262 ('bbbb')
 
 After executing an address load from RBX+RAX*1, we see an interesting string in RDX:
 
-![alt text](https://github.com/ginjabenjamin/CTF/master/RE2a.png "OLOC_SL")
+![alt text](https://github.com/ginjabenjamin/CTF/blob/master/AlexCTF/RE/RE2/RE2a.png "OLOC_SL")
 
 0x4f4c4f435f534c00 works out to 'OLOC_SL'. This does not prove to be the flag, even flipping it for endianess (which would have been weird since the 00 was already at the end of the value). Continuing through the program, we see some arithmetic operations against our input and the RDX value. Eventually, we get to a compare:
 
-![alt text](https://github.com/ginjabenjamin/CTF/master/RE2b.png "Key check")
+![alt text](https://github.com/ginjabenjamin/CTF/blob/master/AlexCTF/RE/RE2/RE2b.png "Key check")
 
 
 It is comparing our input 'b' against 'A'. This must be testing against the key values. We add a breakpoint at the CMP operation and continue looping through. Since we do not have the correct values, we use JUMP to skip the call to 0x400b64, which would terminate the program:
