@@ -8,7 +8,7 @@ The reversing is facilitated not just by access to the source code, but also by 
 
 ## Act I, Scene I
 
-![alt text](https://github.com/ginjabenjamin/CTF/blob/master/PicoCTF2017/RE/Level-03-MuchAdoAboutHacking/acti_scene1.png "Act i, Scene i")
+![alt text](https://github.com/ginjabenjamin/CTF/blob/master/PicoCTF2017/RE/Level-03-MuchAdoAboutHacking/acti_scenei.png "Act i, Scene i")
 
 By the end of Act I, Scene I (0x00000ebe) we see three characters with zero values, Achilles (foreshadowing? sadly, no) with a value of 32 and Cleopatra a value of 96.
 
@@ -19,7 +19,7 @@ Act I, Scene II is essentially two parts. The first part takes user input, addin
 
 ![alt text](https://github.com/ginjabenjamin/CTF/blob/master/PicoCTF2017/RE/Level-03-MuchAdoAboutHacking/acti_sceneii.png "Act i, Scene ii")
 
-![alt text](https://github.com/ginjabenjamin/CTF/blob/master/PicoCTF2017/RE/Level-03-MuchAdoAboutHacking/acti_sceneii_binja "Act i, Scene ii Binja")
+![alt text](https://github.com/ginjabenjamin/CTF/blob/master/PicoCTF2017/RE/Level-03-MuchAdoAboutHacking/acti_sceneii_binja.png"Act i, Scene ii Binja")
 
 
 The second part, (after 0x00000fa7 = jne xfae) subtracts one from Beatrice. 
